@@ -5,7 +5,10 @@ selectXBtn = selectBox.querySelector('.playerX'),
 selectOBtn = selectBox.querySelector('.playerO'),
 playBoard = document.querySelector('.play-board'),
 allBox = document.querySelectorAll('section span'),
-players = document.querySelector('.players');
+players = document.querySelector('.players'),
+rsultBox = document.querySelector('.result-box'),
+wonText = rsultBox.querySelector('.won-text'),
+replayBtn = rsultBox.querySelector('button');
 
 window.onload = ()=>{ //once window loaded
     for(let i = 0; i < allBox.length ; i++){ // add onclick attribute to all available section's span
@@ -103,5 +106,22 @@ function selectWinner() {
     if(checkClasses(1, 2, 3, playerSign) || checkClasses(4, 5, 6, playerSign) || checkClasses(7, 8, 9, playerSign) || checkClasses(1, 4, 7, playerSign) || checkClasses(2, 5, 8, playerSign) || checkClasses(3, 6, 9, playerSign) || checkClasses(1, 5, 9, playerSign) || checkClasses(3, 5, 7, playerSign)){
          console.log(playerSign + " " + "is a winner")
         runBot = false;
+        bot(runBot);
+        //let show result
+        setTimeout(() => {
+            playBoard.classList.remove("show");
+           rsultBox.classList.add("show");
+        }, 700)
+        wonText.innerHTML = `Player <p>${playerSign}</p> won The game`
+
+    }else{
+        if(getClass(1) != '' && getClass(2) != '' && getClass(3) != '' && getClass(4) != '' && getClass(5) != '' && getClass(6) != '' && getClass(7) != '' && getClass(8) != '' && getClass(9) != ''){
+            bot(runBot);
+            setTimeout(() => {
+                playBoard.classList.remove("show");
+               rsultBox.classList.add("show");
+            }, 700)
+            wonText.innerHTML = `<p>Tie</p>`
+        }
     }
 }

@@ -145,7 +145,14 @@ body{
     border-radius: 5px;
     max-width: 350px;
     width: 100%;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50% , -50%) scale(0.9);
+}
+.result-box.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50% , -50%) scale(1);
 }
 .result-box .won-text{
     font-size: 25px;
