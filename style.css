@@ -13,6 +13,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
 }
 .select-box{
     background: #fff;
@@ -20,7 +21,11 @@ body{
     border-radius: 5px;
     max-width: 330px;
     width: 100%;
-    /* display: none; */
+}
+.select-box.hide{
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50% , -50%) scale(0.9);
 }
 .select-box header{
     font-size: 23px;
@@ -61,7 +66,14 @@ body{
     margin-left: 5px;
 }
 .play-board{
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50% , -50%) scale(0.9);
+}
+.play-board.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50% , -50%) scale(1);
 }
 .play-board .details{
     background-color: #fff;
@@ -84,6 +96,7 @@ body{
     cursor: default;
     z-index: 5;
     text-align: center;
+    transition: all 0.3s ease;
 }
 .play-board .details span:first-child{
     color: #fff;
@@ -97,6 +110,16 @@ body{
     background-color: #56baed;
     border-radius: 5px;
     z-index: 2;
+    transition: all 0.3s ease;
+}
+.players.active span:first-child{
+    color: #56baed;
+}
+.players.active span:nth-child(2){
+    color: #fff;
+}
+.players.active .slider{
+    left: 50%;
 }
 .play-board section{
     display: flex;
