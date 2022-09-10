@@ -163,6 +163,7 @@ body{
 .result-box .won-text p{
     font-weight: 600;
     margin: 0 5px;
+    color: #56baed;
 }
 .result-box .btn{
     display: flex;

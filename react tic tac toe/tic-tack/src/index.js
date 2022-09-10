@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">  
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
-<body>
-    <!-- select box -->
+import React from 'react';
+import ReactDOM from 'react-dom';
+import CSS from './index.css';
+import JSX from './index.jsx';
+
+ReactDOM.render(
+  <>
     <div className="select-box">
         <header>Tic Tac Toe</header>
         <div className="title">Select Which You want to be?</div>
@@ -18,9 +13,7 @@
             <button className="playerO">Player (O)</button>
         </div>
     </div>
-
-    <!-- Playboard Section -->
-
+ 
     <div className="play-board">
         <div className="details">
             <div className="players">
@@ -48,14 +41,12 @@
         </div>
     </div>
 
-    <!-- result Box -->
+  
     <div className="result-box">
         <div className="won-text"></div>
         <div className="btn">
             <button>Replay</button>
         </div>
 </div>
-
-<script src="./app.js"></script>
-</body>
-</html>
+  </>, document.querySelector('#root')
+);
