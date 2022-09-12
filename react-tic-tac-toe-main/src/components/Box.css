@@ -1,5 +1,5 @@
 .box {
-  background-color: #ffffff;
+  background-color: #000000;
   border: none;
   border-radius: 10%;
   box-shadow: 0px 0px 8px #888888;
@@ -14,13 +14,13 @@
 }
 
 .x {
-  color: rgb(255, 70, 37);
+  color: rgb(81, 255, 37);
 }
 
 .o {
-  color: rgb(44, 135, 255);
+  color: rgb(251, 44, 255);
 }
 
 .box:hover {
-  box-shadow: 0px 0px 15px #888888;
+  box-shadow: 0px 0px 15px #6e6d6d;
 }
