@@ -5,7 +5,8 @@
     font-family: "Poppins" , sans-serif;
 }
 body{
-    background:  #56baed;
+    background:  rgb(113, 113, 8);
+    color: black;
 }
 
 .select-box, .play-board, .result-box{
@@ -49,7 +50,7 @@ body{
     padding: 8px 0;
     border: none;
     outline: none;
-    background: #56baed;
+    background: rgb(113, 113, 8);
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
@@ -88,7 +89,7 @@ body{
 }
 .play-board .details span{
     width: 100%;
-    color: #56baed;
+    color: rgb(113, 113, 8);
     border-radius: 5px;
     padding: 7px 0;
     font-size: 19px;
@@ -107,13 +108,13 @@ body{
     left: 0;
     height: 100%;
     width: 50%;
-    background-color: #56baed;
+    background-color: rgb(113, 113, 8);
     border-radius: 5px;
     z-index: 2;
     transition: all 0.3s ease;
 }
 .players.active span:first-child{
-    color: #56baed;
+    color: rgb(113, 113, 8);
 }
 .players.active span:nth-child(2){
     color: #fff;
@@ -134,7 +135,7 @@ body{
     font-size: 40px;
     text-align: center;
     line-height: 80px;
-    color: #56baed;
+    color: rgb(113, 113, 8);
 }
 .play-board .play-area{
     margin-top: 20px;
@@ -163,7 +164,7 @@ body{
 .result-box .won-text p{
     font-weight: 600;
     margin: 0 5px;
-    color: #56baed;
+    color: rgb(113, 113, 8);
 }
 .result-box .btn{
     display: flex;
@@ -176,7 +177,7 @@ body{
     padding: 8px 20px;
     border: none;
     outline: none;
-    background: #56baed;
+    background: rgb(113, 113, 8);
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
