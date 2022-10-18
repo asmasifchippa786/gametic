@@ -27,7 +27,7 @@ window.onload = ()=>{ //once window loaded
     }
 }
 let playerXIcon = "fas fa-times";// class of font awsome for cross icon
-let playerOIcon = "far fa-circle";// class of font awsome for circle icon
+let playerOIcon = "fa-regular fa-circle";// class of font awsome for circle icon
 let playerSign = "X"; //suppose player will be X
 let runBot = true;
 
